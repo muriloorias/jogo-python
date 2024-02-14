@@ -46,7 +46,6 @@ while jogo_ativo:
         x_azul = randint(40, 600)
         y_azul = 0
         pontos += 1
-
     y_azul += 5
     if ret_azul.colliderect(chao):
         jogo_ativo = False
@@ -57,6 +56,5 @@ while jogo_ativo:
         velocidade_azul = velocidade_azul + 5
     if pontos >= 25:
         velocidade_azul = velocidade_azul + 10
-
     tela.blit(texto_formatado, (450, 40))
     pygame.display.update()
